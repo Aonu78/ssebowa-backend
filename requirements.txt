@@ -1,5 +1,5 @@
 certifi==2022.9.24
-babel==2.11.0
+babel==2.12.1
 flask-babel==2.0.0
 flask==2.2.2
 Flask-Cors==3.0.10
