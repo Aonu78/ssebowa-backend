@@ -62,7 +62,7 @@ RUN su searxng -c "/usr/bin/python3 -m compileall -q searx"; \
     find /usr/local/searxng/searx/static -a \( -name '*.html' -o -name '*.css' -o -name '*.js' \
     -o -name '*.svg' -o -name '*.ttf' -o -name '*.eot' \) \
     -type f -exec gzip -9 -k {} \+ -exec brotli --best {} \+
-
+RUN chmod +x /usr/local/searxng/dockerfiles/docker-entrypoint.sh
 # Keep these arguments at the end to prevent redundant layer rebuilds
 ARG LABEL_DATE=
 ARG GIT_URL=unknown
